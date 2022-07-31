@@ -1,0 +1,127 @@
+.main {
+  height: 52vh;
+  width: 80vw;
+  margin-inline: auto;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.main::-webkit-scrollbar {
+  width: 0;
+}
+
+.note {
+  min-height: 3rem;
+  background-color: hsla(228deg, 29%, 19%, 0.35);
+  width: 80%;
+  margin-inline: auto;
+  border-radius: 0.4rem;
+  margin-top: 5px;
+  color: white;
+  position: relative;
+  font-size: clamp(0.8rem, 2vw + 1rem, 1.8rem);
+}
+.note .title {
+  padding: 0.3em 0.8em;
+  font-size: 0.8em;
+}
+.note .des {
+  padding: 0.6em 1em;
+  font-size: 0.6em;
+  overflow: hidden;
+}
+.note .delete {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.note .delete svg {
+  fill: hsl(0deg, 0%, 100%);
+  height: clamp(1rem, 3vw + 0.5rem, 2rem);
+}
+
+.footer {
+  --fn-clr: hsl(0, 0%, 90%);
+  --bg-clr: hsla(228, 29%, 19%, 0.35);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer > * {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.footer .left {
+  width: clamp(40rem, 70vw + 1rem, 50rem);
+}
+.footer .left > * {
+  display: flex;
+  justify-content: center;
+}
+.footer .left .title {
+  width: 100%;
+}
+.footer .left .title input {
+  font-size: 1.3rem;
+  color: var(--fn-clr);
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  max-width: 50rem;
+  border: 0;
+  background-color: var(--bg-clr);
+}
+.footer .left .title input:focus, .footer .left .title input:active {
+  outline: none;
+}
+.footer .left .description {
+  margin-block-start: 1vh;
+  width: 100%;
+  scrollbar-width: none;
+}
+.footer .left .description::-webkit-scrollbar {
+  width: 0;
+}
+.footer .left .description .des {
+  font-size: 1.1rem;
+  resize: none;
+  color: var(--fn-clr);
+  outline: none;
+  min-height: 2rem;
+  height: max-content;
+  max-height: 5rem;
+  width: 100%;
+  max-width: 50rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  border: 0;
+  background-color: var(--bg-clr);
+  font-family: sans-serif;
+  scrollbar-width: none;
+}
+.footer .left .description .des::-webkit-scrollbar {
+  width: 0;
+}
+.footer .left .description .des:focus, .footer .left .description .des:active {
+  outline: none;
+}
+.footer .add {
+  color: var(--fn-clr);
+  background-color: var(--bg-clr);
+  justify-content: center;
+  padding-inline: 2vw;
+  border-radius: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+  border: 0;
+}
+
+/*# sourceMappingURL=Main.css.map */

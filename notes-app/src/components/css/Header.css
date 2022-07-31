@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;1,400;1,700&display=swap");
+header {
+  padding: 2vh 5vw;
+  font-size: clamp(0.7rem, 2vh + 1rem, 1.8rem);
+}
+header * {
+  color: rgb(199, 226, 255);
+  font-size: 1.7rem;
+  font-family: "Cousine", monospace;
+  font-weight: bolder;
+}
+header .date {
+  font-size: 1.5em;
+}
+header .month {
+  font-size: 1em;
+}
+
+/*# sourceMappingURL=Header.css.map */
